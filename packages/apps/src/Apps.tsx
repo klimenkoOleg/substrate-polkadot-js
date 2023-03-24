@@ -11,10 +11,10 @@ import GlobalStyle from '@polkadot/react-components/styles';
 import { useApi, useTheme } from '@polkadot/react-hooks';
 import Signer from '@polkadot/react-signer';
 
-import Content from './Content/index.js';
-import Menu from './Menu/index.js';
-import ConnectingOverlay from './overlays/Connecting.js';
-import WarmUp from './WarmUp.js';
+import ConnectingOverlay from './overlays/Connecting';
+import Content from './Content';
+import Menu from './Menu';
+import WarmUp from './WarmUp';
 
 export const PORTAL_ID = 'portals';
 

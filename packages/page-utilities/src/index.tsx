@@ -6,9 +6,9 @@ import { Route, Switch } from 'react-router';
 
 import { Tabs } from '@polkadot/react-components';
 
-import Convert from './Convert.js';
-import Hash from './Hash.js';
-import { useTranslation } from './translate.js';
+import Convert from './Convert';
+import Hash from './Hash';
+import { useTranslation } from './translate';
 
 interface Props {
   basePath: string;

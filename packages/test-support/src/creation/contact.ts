@@ -5,7 +5,7 @@ import { DeriveBalancesAll, DeriveStakingAccount } from '@polkadot/api-derive/ty
 import { UseAccountInfo } from '@polkadot/react-hooks/types';
 import { KeyringJson$Meta } from '@polkadot/ui-keyring/types';
 
-import { AccountOverrides as ContactOverrides, Override } from '../types.js';
+import { AccountOverrides as ContactOverrides, Override } from '../types';
 
 export const aContact = (): ContactOverrides => ({});
 

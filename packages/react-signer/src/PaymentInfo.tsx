@@ -13,7 +13,7 @@ import { Expander, MarkWarning } from '@polkadot/react-components';
 import { useApi, useCall, useIsMountedRef } from '@polkadot/react-hooks';
 import { formatBalance, nextTick } from '@polkadot/util';
 
-import { useTranslation } from './translate.js';
+import { useTranslation } from './translate';
 
 interface Props {
   accountId?: string | null;

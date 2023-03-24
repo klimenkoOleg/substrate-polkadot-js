@@ -8,8 +8,8 @@ import { Route, Switch } from 'react-router';
 
 import { Tabs } from '@polkadot/react-components';
 
-import Runtime from './Runtime/index.js';
-import { useTranslation } from './translate.js';
+import Runtime from './Runtime';
+import { useTranslation } from './translate';
 
 function RuntimeApp ({ basePath }: Props): React.ReactElement<Props> {
   const { t } = useTranslation();

@@ -7,7 +7,7 @@ import type { Registry, SignerPayloadJSON } from '@polkadot/types/types';
 
 import { objectSpread } from '@polkadot/util';
 
-import { lockAccount } from '../util.js';
+import { lockAccount } from '../util';
 
 let id = 0;
 

@@ -4,7 +4,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import store from 'store';
 
-import { SaveFile } from './types.js';
+import { SaveFile } from './types';
 
 export interface Files {
   files: SaveFile[],

@@ -3,7 +3,7 @@
 
 import type { DeriveAccountInfo } from '@polkadot/api-derive/types';
 import type { ActionStatus } from '@polkadot/react-components/Status/types';
-import type { ModalProps as Props } from '../types.js';
+import type { ModalProps as Props } from '../types';
 
 import React, { useCallback, useState } from 'react';
 
@@ -13,7 +13,7 @@ import { keyring } from '@polkadot/ui-keyring';
 import { hexToU8a } from '@polkadot/util';
 import { ethereumEncode } from '@polkadot/util-crypto';
 
-import { useTranslation } from '../translate.js';
+import { useTranslation } from '../translate';
 
 interface AddrState {
   address: string;

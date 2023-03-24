@@ -5,7 +5,7 @@ import { SubmittableExtrinsic } from '@polkadot/api/types';
 import { KeyringPair } from '@polkadot/keyring/types';
 import { EventRecord, ExtrinsicStatus } from '@polkadot/types/interfaces';
 
-import { waitFor } from '../utils/waitFor.js';
+import { waitFor } from '../utils/waitFor';
 
 export async function execute (extrinsic: SubmittableExtrinsic<'promise'>, singer: KeyringPair, logger = { info: console.log }): Promise<void> {
   let currentTxDone = false;

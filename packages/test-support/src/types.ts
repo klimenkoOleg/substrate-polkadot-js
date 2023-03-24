@@ -15,5 +15,3 @@ export interface AccountOverrides {
   staking?: Override<DeriveStakingAccount>;
   info?: Override<UseAccountInfo>;
 }
-
-export type WaitOptions = { interval?: number, timeout?: number };

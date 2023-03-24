@@ -8,8 +8,8 @@ import { useApi, useToggle } from '@polkadot/react-hooks';
 import { AddressFlags } from '@polkadot/react-hooks/types';
 import { isFunction } from '@polkadot/util';
 
-import Transfer from '../modals/Transfer.js';
-import { useTranslation } from '../translate.js';
+import Transfer from '../modals/Transfer';
+import { useTranslation } from '../translate';
 
 interface Props {
   className?: string;

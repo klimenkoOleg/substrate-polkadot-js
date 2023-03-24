@@ -11,7 +11,7 @@ import { keyring } from '@polkadot/ui-keyring';
 import { assert, u8aToHex } from '@polkadot/util';
 import { keyExtractSuri, mnemonicValidate } from '@polkadot/util-crypto';
 
-import { useTranslation } from '../../translate.js';
+import { useTranslation } from '../../translate';
 
 interface Props {
   onClose: () => void;

@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import type { TFunction } from 'i18next';
-import type { Route } from './types.js';
+import type { Route } from './types';
 
 import Component from '@polkadot/app-preimages';
 
@@ -12,7 +12,6 @@ export default function create (t: TFunction): Route {
     display: {
       needsAccounts: true,
       needsApi: [
-        'query.preimage.statusFor',
         'tx.preimage.notePreimage'
       ]
     },

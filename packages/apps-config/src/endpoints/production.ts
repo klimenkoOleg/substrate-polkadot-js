@@ -1,13 +1,13 @@
 // Copyright 2017-2023 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { EndpointOption } from './types.js';
+import type { EndpointOption } from './types';
 
-import { chains3dpassPNG, chainsAlephSVG, chainsBittensorPNG, chainsCreditcoinPNG, chainsDebioSVG, chainsEquilibriumSVG, chainsGenshiroSVG, chainsLogionPNG, chainsMyriadPNG, chainsSpannerPNG } from '../ui/logos/chains/index.js';
-import { nodesAresOdysseySVG, nodesAutomataPNG, nodesCentrifugePNG, nodesChainxSVG, nodesCompetitorsClubPNG, nodesCrownSterlingPNG, nodesCrustSVG, nodesDarwiniaSVG, nodesDatahighwayPNG, nodesDockPNG, nodesEdgewareWhitePNG, nodesEfinitySVG, nodesHanyonycashPNG, nodesHumanodePNG, nodesJoystreamSVG, nodesKulupuSVG, nodesKusariSVG, nodesMathSVG, nodesMinixPNG, nodesNftmartPNG, nodesNodleSVG, nodesPolkadexSVG, nodesPolymeshSVG, nodesRiochainSVG, nodesRobonomicsSVG, nodesSherpaxPNG, nodesSoraSubstrateSVG, nodesStafiPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesSwapdexSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesUniartsPNG, nodesUnitnetworkPNG } from '../ui/logos/nodes/index.js';
+import { chains3dpassPNG, chainsAlephSVG, chainsBittensorPNG, chainsCreditcoinPNG, chainsDebioSVG, chainsEquilibriumSVG, chainsGenshiroSVG, chainsLogionPNG, chainsMyriadPNG, chainsSpannerPNG } from '../ui/logos/chains';
+import { nodesAresOdysseySVG, nodesAutomataPNG, nodesCentrifugePNG, nodesChainxSVG, nodesCompetitorsClubPNG, nodesCrabSVG, nodesCrownSterlingPNG, nodesCrustSVG, nodesDarwiniaSVG, nodesDatahighwayPNG, nodesDockPNG, nodesEdgewareWhitePNG, nodesEfinitySVG, nodesHanyonycashPNG, nodesHumanodePNG, nodesJoystreamSVG, nodesKulupuSVG, nodesKusariSVG, nodesMathSVG, nodesMinixPNG, nodesNftmartPNG, nodesNodleSVG, nodesPolkadexSVG, nodesPolymeshSVG, nodesRiochainSVG, nodesRobonomicsSVG, nodesSherpaxPNG, nodesSoraSubstrateSVG, nodesStafiPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesSwapdexSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesUniartsPNG, nodesUnitnetworkPNG } from '../ui/logos/nodes';
 
-export * from './productionRelayKusama.js';
-export * from './productionRelayPolkadot.js';
+export * from './productionRelayKusama';
+export * from './productionRelayPolkadot';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
 // Polkadot) we try to keep this to live chains only, with RPCs hosted by the community/chain vendor
@@ -150,6 +150,19 @@ export const prodChains: EndpointOption[] = [
     ui: {
       color: '#FF0083',
       logo: nodesDarwiniaSVG
+    }
+  },
+  {
+    info: 'crab',
+    providers: {
+      'Darwinia Network': 'wss://crab-rpc.darwinia.network',
+      Dwellir: 'wss://darwiniacrab-rpc.dwellir.com',
+      OnFinality: 'wss://darwinia-crab.api.onfinality.io/public-ws'
+    },
+    text: 'Darwinia Crab',
+    ui: {
+      color: '#512DBC',
+      logo: nodesCrabSVG
     }
   },
   {
@@ -364,11 +377,11 @@ export const prodChains: EndpointOption[] = [
   {
     info: 'polymesh',
     providers: {
-      Polymesh: 'wss://mainnet-rpc.polymesh.network'
+      Polymath: 'wss://mainnet-rpc.polymesh.network'
     },
     text: 'Polymesh Mainnet',
     ui: {
-      color: 'linear-gradient(197deg, #FF2E72, #4A125E)',
+      color: '#1348e4',
       logo: nodesPolymeshSVG
     }
   },
@@ -432,8 +445,9 @@ export const prodChains: EndpointOption[] = [
   },
   {
     info: 'stafi',
+    isDisabled: true, // Cannot find type ChainId
     providers: {
-      // 'Stafi Foundation': 'wss://mainnet-rpc.stafi.io' // isDisabled: true, // Cannot find type ChainId
+      'Stafi Foundation': 'wss://mainnet-rpc.stafi.io'
     },
     text: 'Stafi',
     ui: {

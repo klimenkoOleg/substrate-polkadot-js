@@ -1,15 +1,16 @@
 // Copyright 2017-2023 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-const fs = require('node:fs');
-const path = require('node:path');
-const process = require('node:process');
+const fs = require('fs');
+const path = require('path');
+const process = require('process');
 
 // incorrect packages without type specifier
-[
-  // See https://github.com/LibertyDSNP/frequency/issues/1116
+const PKG_FIX = [
   '@frequency-chain/api-augment'
-].forEach((f) => {
+];
+
+PKG_FIX.forEach((f) => {
   const full = path.join(process.cwd(), `node_modules/${f}/package.json`);
   const json = JSON.parse(fs.readFileSync(full, 'utf8'));
 

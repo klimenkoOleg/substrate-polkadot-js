@@ -11,7 +11,7 @@ import { useApi } from '@polkadot/react-hooks';
 import { formatNumber } from '@polkadot/util';
 import { base58Decode, checkAddressChecksum, encodeAddress, isAddress } from '@polkadot/util-crypto';
 
-import { useTranslation } from './translate.js';
+import { useTranslation } from './translate';
 
 interface Props {
   className?: string;

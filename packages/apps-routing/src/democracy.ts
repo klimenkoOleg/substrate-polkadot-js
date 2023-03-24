@@ -3,7 +3,7 @@
 
 import type { TFunction } from 'i18next';
 import type { ApiPromise } from '@polkadot/api';
-import type { Route } from './types.js';
+import type { Route } from './types';
 
 import Component, { useCounter } from '@polkadot/app-democracy';
 
